@@ -11,10 +11,16 @@ inputs.forEach((node) => {
 
         const results = document.querySelector(".textResult")
         const resultText = results.innerText.trim()
-        if (value == "DEL") {
+        if (value == "RESET") {
             results.innerText = ""
             return true
         }
+
+        if (value == "DEL") {
+            value = "0"
+            return true
+        }
+
         if (resultText == "0") {
             results.innerText = ""
         }
