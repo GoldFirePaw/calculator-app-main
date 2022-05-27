@@ -17,9 +17,11 @@ inputs.forEach((node) => {
         }
 
         if (value == "DEL") {
-            value = "0"
+            console.log("coucou")
+            results.innerText = resultText.slice(0, -1)
             return true
         }
+
 
         if (resultText == "0") {
             results.innerText = ""
