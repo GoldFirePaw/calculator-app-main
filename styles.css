@@ -3,6 +3,14 @@
     margin: 0;
 }
 
+.switch-toggle {
+    width: 200px;
+}
+
+.switch-toggle:hover {
+    cursor: pointer;
+}
+
 p {
     position: absolute;
     top: -10%;
